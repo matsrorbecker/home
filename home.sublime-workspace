@@ -1,0 +1,278 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Robot",
+				"RobotTemplate"
+			],
+			[
+				"modified",
+				"modifiedby"
+			],
+			[
+				"to",
+				"toISOString"
+			],
+			[
+				"get",
+				"getUserId"
+			],
+			[
+				"un",
+				"unemployment"
+			],
+			[
+				"default",
+				"defaultTemplate"
+			],
+			[
+				"on",
+				"onDefault"
+			],
+			[
+				"App",
+				"AppLayoutView"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 147.0,
+		"last_filter": "package insta",
+		"selected_items":
+		[
+			[
+				"package insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/dev/dev/home"
+	],
+	"file_history":
+	[
+		"/Users/dev/dev/databox/app/views/gui/editorview.coffee",
+		"/Users/dev/dev/databox/app/styles/entry.less",
+		"/Users/dev/dev/databox/app/views/sidebar/tmpl/sidebarview.jade",
+		"/Users/dev/dev/databox/app/views/sidebar/sidebarview.coffee",
+		"/Users/dev/dev/databox/app/router.coffee",
+		"/Users/dev/dev/databox/app/views/tmpl/applayoutview.jade",
+		"/Users/dev/dev/databox/app/views/applayoutview.coffee",
+		"/Users/dev/dev/databox/lib/web.coffee",
+		"/Users/dev/dev/databox/app/app.coffee",
+		"/Users/dev/dev/databox/package.json",
+		"/Users/dev/dev/databox/app/models/robot/robot.coffee",
+		"/Users/dev/dev/databox/app/views/gui/navbarview.coffee",
+		"/Users/dev/dev/databox/app/views/gui/tmpl/publishview.jade",
+		"/Users/dev/dev/databox/bower.json",
+		"/Users/dev/dev/databox/.gitignore",
+		"/Users/dev/dev/databox/public/javascripts/vendor.js",
+		"/Users/dev/dev/databox/app/views/gui/publishview.coffee",
+		"/Users/dev/dev/databox/app/models/robot/robottemplate.coffee",
+		"/Users/dev/dev/databox/app/init.coffee",
+		"/Users/dev/dev/databox/app/views/gui/nameview.coffee",
+		"/Users/dev/dev/databox/app/views/gui/tmpl/nameview.jade",
+		"/Users/dev/dev/databox/app/views/gui/tmpl/navbarview.jade",
+		"/Users/dev/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/dev/dev/databox/app/models/robot/robotdata.coffee",
+		"/Users/dev/dev/databox/app/bridge.coffee",
+		"/Users/dev/dev/databox/app/assets/index.html",
+		"/Users/dev/dev/databox/usa-package.json",
+		"/Users/dev/Library/Application Support/Sublime Text 3/Packages/User/CoffeeScript.sublime-settings",
+		"/Users/dev/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/dev/Library/Application Support/Sublime Text 3/Packages/User/HTML.sublime-settings",
+		"/Users/dev/Library/Application Support/Sublime Text 3/Packages/User/JavaScript.sublime-settings",
+		"/Users/dev/Library/Application Support/Sublime Text 3/Packages/User/Jade.sublime-settings",
+		"/Users/dev/dev/databox/lib/usa/web.coffee",
+		"/Users/dev/dev/databox/app/models/robotdata.coffee",
+		"/Users/dev/dev/databox/app/views/gui/tmpl/editorview.jade",
+		"/Users/dev/dev/databox/app/models/texttemplate.coffee",
+		"/Users/dev/dev/databox/app/views/tmpl/applayout.jade",
+		"/Users/dev/dev/scanpix-chef/vagrant/devbox/ace-test/public/index.html",
+		"/Users/dev/dev/scanpix-chef/vagrant/devbox/ace-test/app.coffee",
+		"/Users/dev/dev/scanpix-chef/vagrant/devbox/ace-test/public/scripts/app.js"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"console",
+			"notr",
+			"{",
+			"databox",
+			"quiz",
+			"public",
+			"saved.robot",
+			"subscriber",
+			"port",
+			"isprod",
+			"uuid",
+			"getuser",
+			"bodyParser",
+			"amqp",
+			"islocal",
+			"cheerio",
+			"request",
+			"confis",
+			"createguid",
+			"middleware",
+			"cloudinary",
+			"uuid",
+			"uuid-v4",
+			"slashes",
+			"connect-slashes",
+			"multer",
+			"quiz",
+			"databox",
+			"quiz",
+			"middleware",
+			"requirelogin",
+			"ace",
+			"editor"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "home.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 257.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
