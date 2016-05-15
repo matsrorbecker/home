@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"get",
+				"getErrorFor"
+			],
+			[
+				"C",
+				"CONTACT_TEXT"
+			],
+			[
+				"text",
+				"textarea	Tag"
+			],
+			[
+				"outline",
+				"outline-width"
+			],
+			[
 				"Robot",
 				"RobotTemplate"
 			],
@@ -14,10 +30,6 @@
 			[
 				"to",
 				"toISOString"
-			],
-			[
-				"get",
-				"getUserId"
 			],
 			[
 				"un",
@@ -39,6 +51,23 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "src/app.coffee",
+			"settings":
+			{
+				"buffer_size": 3568,
+				"line_ending": "Unix",
+				"name": "app.coffee"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1153,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -77,10 +106,23 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/dev/dev/home"
+		"/Users/dev/dev/home",
+		"/Users/dev/dev/home/css",
+		"/Users/dev/dev/home/js",
+		"/Users/dev/dev/home/src"
 	],
 	"file_history":
 	[
+		"/Users/dev/dev/sandbox/ericsson2015.txt",
+		"/Users/dev/dev/home/css/app.css",
+		"/Users/dev/dev/home/css/style.css",
+		"/Users/dev/dev/home/src/scripts.coffee",
+		"/Users/dev/dev/home/js/scripts.js",
+		"/Users/dev/dev/home/scripts.coffee",
+		"/Users/dev/dev/home/js/app.js",
+		"/Users/dev/Library/Application Support/Sublime Text 3/Packages/User/CSS.sublime-settings",
+		"/Users/dev/dev/home/src/app.coffee",
+		"/Users/dev/Library/Application Support/Sublime Text 3/Packages/User/HTML.sublime-settings",
 		"/Users/dev/dev/databox/app/views/gui/editorview.coffee",
 		"/Users/dev/dev/databox/app/styles/entry.less",
 		"/Users/dev/dev/databox/app/views/sidebar/tmpl/sidebarview.jade",
@@ -110,7 +152,6 @@
 		"/Users/dev/dev/databox/usa-package.json",
 		"/Users/dev/Library/Application Support/Sublime Text 3/Packages/User/CoffeeScript.sublime-settings",
 		"/Users/dev/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/Users/dev/Library/Application Support/Sublime Text 3/Packages/User/HTML.sublime-settings",
 		"/Users/dev/Library/Application Support/Sublime Text 3/Packages/User/JavaScript.sublime-settings",
 		"/Users/dev/Library/Application Support/Sublime Text 3/Packages/User/Jade.sublime-settings",
 		"/Users/dev/dev/databox/lib/usa/web.coffee",
@@ -124,7 +165,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -138,6 +179,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"resultaträkning",
+			"resultatet",
+			"finansiella post",
+			"result efter",
 			"console",
 			"notr",
 			"{",
@@ -188,8 +233,66 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src/app.coffee",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3568,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3568,
+								3568
+							]
+						],
+						"settings":
+						{
+							"auto_name": "app.coffee",
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1138.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1153,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								631,
+								631
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],

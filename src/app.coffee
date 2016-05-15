@@ -1,6 +1,6 @@
 class App
 
-    VALID_COMMANDS = [
+    VALID_COMMANDS: [
         'help'
         'clear'
         'about'
@@ -8,7 +8,7 @@ class App
         'cv'
     ]
 
-    HELP_TEXT = [
+    HELP_TEXT: [
         'help -- list available commands'
         'clear -- clear the terminal screen'
         'about -- show some info about me' 
@@ -17,7 +17,7 @@ class App
         ''
     ]
 
-    ABOUT_TEXT = [
+    ABOUT_TEXT: [
         "I'm a journalist and a programmer. I work for the Swedish news agency TT."
         'I have a big interest in things like data journalism, automated journalism and language technology.'
         'When programming, I like to use Node.js, Coffeescript and Backbone.'
@@ -27,7 +27,7 @@ class App
         ''
     ]
 
-    CONTACT_TEXT = [
+    CONTACT_TEXT: [
         'Follow me on Twitter: @matsrorbecker'
         'Send me an email: mats@rorbecker.com'
         'Send me an email at work: mats.rorbecker@tt.se'
@@ -36,7 +36,7 @@ class App
         ''
     ]
 
-    CV_TEXT = [
+    CV_TEXT: [
         'Studies:'
         "2013-2015 -- Studied computer science at Stockholm university. Got a bachelor's degree."
         '2003-2004 -- Distance studies in business economics, Mid Sweden university, Sundsvall.'
@@ -52,7 +52,7 @@ class App
         ''
     ]
 
-    GREETINGS = [
+    GREETINGS: [
         'hi'
         'hello'
         'hey'
@@ -81,7 +81,7 @@ class App
     checkIfValid: (command) ->
         text = ''
 
-        if command in VALID_COMMANDS
+        if command in @VALID_COMMANDS
             text = @getResultOf command
         else
             text = @getErrorFor command
@@ -93,15 +93,15 @@ class App
 
         switch command
             when 'help'
-                text = HELP_TEXT.join '\n'
+                text = @HELP_TEXT.join '\n'
             when 'clear'
                 $(output).val ''
             when 'about'
-                text = ABOUT_TEXT.join '\n'
+                text = @ABOUT_TEXT.join '\n'
             when 'contact'
-                text = CONTACT_TEXT.join '\n'
+                text = @CONTACT_TEXT.join '\n'
             when 'cv'
-                text = CV_TEXT.join '\n'
+                text = @CV_TEXT.join '\n'
             else
                 text = command
 
@@ -110,7 +110,7 @@ class App
     getErrorFor: (command) ->
         text = "Command not found. Type 'help' to list valid commands."
 
-        if (GREETINGS.some (greeting) -> 
+        if (@GREETINGS.some (greeting) -> 
             command.indexOf(greeting) >= 0) 
                 text = 'Hi there.'
         else if (command.indexOf('rm -rf') >= 0)
