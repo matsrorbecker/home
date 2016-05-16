@@ -61,10 +61,10 @@
 			}
 		},
 		{
-			"file": "index.html",
+			"file": "js/app.js",
 			"settings":
 			{
-				"buffer_size": 1153,
+				"buffer_size": 4109,
 				"line_ending": "Unix"
 			}
 		}
@@ -113,6 +113,7 @@
 	],
 	"file_history":
 	[
+		"/Users/dev/dev/home/index.html",
 		"/Users/dev/dev/sandbox/ericsson2015.txt",
 		"/Users/dev/dev/home/css/app.css",
 		"/Users/dev/dev/home/css/style.css",
@@ -233,7 +234,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -249,48 +250,52 @@
 						"selection":
 						[
 							[
-								3568,
-								3568
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"auto_name": "app.coffee",
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1138.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1153,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								631,
-								631
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/app.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 4109,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]

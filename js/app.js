@@ -4,21 +4,19 @@
     indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
 
   App = (function() {
-    var ABOUT_TEXT, CONTACT_TEXT, CV_TEXT, GREETINGS, HELP_TEXT, VALID_COMMANDS;
-
     function App() {}
 
-    VALID_COMMANDS = ['help', 'clear', 'about', 'contact', 'cv'];
+    App.prototype.VALID_COMMANDS = ['help', 'clear', 'about', 'contact', 'cv'];
 
-    HELP_TEXT = ['help -- list available commands', 'clear -- clear the terminal screen', 'about -- show some info about me', 'contact -- learn how to contact me', 'cv -- take a look at my curriculum vitae', ''];
+    App.prototype.HELP_TEXT = ['help -- list available commands', 'clear -- clear the terminal screen', 'about -- show some info about me', 'contact -- learn how to contact me', 'cv -- take a look at my curriculum vitae', ''];
 
-    ABOUT_TEXT = ["I'm a journalist and a programmer. I work for the Swedish news agency TT.", 'I have a big interest in things like data journalism, automated journalism and language technology.', 'When programming, I like to use Node.js, Coffeescript and Backbone.', 'I have lots of kids and a wife.', "I'm from Oskarshamn but I live in Haegersten, Stockholm.", 'Forza Bajen!', ''];
+    App.prototype.ABOUT_TEXT = ["I'm a journalist and a programmer. I work for the Swedish news agency TT.", 'I have a big interest in things like data journalism, automated journalism and language technology.', 'When programming, I like to use Node.js, Coffeescript and Backbone.', 'I have lots of kids and a wife.', "I'm from Oskarshamn but I live in Haegersten, Stockholm.", 'Forza Bajen!', ''];
 
-    CONTACT_TEXT = ['Follow me on Twitter: @matsrorbecker', 'Send me an email: mats@rorbecker.com', 'Send me an email at work: mats.rorbecker@tt.se', 'Give me a call: +46 70 207 28 67', "Oh, and I'm on Linkedin.", ''];
+    App.prototype.CONTACT_TEXT = ['Follow me on Twitter: @matsrorbecker', 'Send me an email: mats@rorbecker.com', 'Send me an email at work: mats.rorbecker@tt.se', 'Give me a call: +46 70 207 28 67', "Oh, and I'm on Linkedin.", ''];
 
-    CV_TEXT = ['Studies:', "2013-2015 -- Studied computer science at Stockholm university. Got a bachelor's degree.", '2003-2004 -- Distance studies in business economics, Mid Sweden university, Sundsvall.', '1998-1999 -- Studies in sociology, Stockholm university.', '1996-1998 -- Journalist program, Ljungskile folkhoegskola.', '', 'Work:', '2001-present -- Reporter, TT News Agency.', '2000-2001 -- Editor, online newspaper 24timmar.se, Uppsala.', '1999-2000 -- Temporary jobs as reporter/news presenter P4 Uppland.', '1998 -- Internship, summer job as reporter/news presenter P4 Sjuhaerad.', '1995-1996 -- Internship, temporary jobs as reporter Nyheterna newspaper, Oskarshamn.', ''];
+    App.prototype.CV_TEXT = ['Studies:', "2013-2015 -- Studied computer science at Stockholm university. Got a bachelor's degree.", '2003-2004 -- Distance studies in business economics, Mid Sweden university, Sundsvall.', '1998-1999 -- Studies in sociology, Stockholm university.', '1996-1998 -- Journalist program, Ljungskile folkhoegskola.', '', 'Work:', '2001-present -- Reporter, TT News Agency.', '2000-2001 -- Editor, online newspaper 24timmar.se, Uppsala.', '1999-2000 -- Temporary jobs as reporter/news presenter P4 Uppland.', '1998 -- Internship, summer job as reporter/news presenter P4 Sjuhaerad.', '1995-1996 -- Internship, temporary jobs as reporter Nyheterna newspaper, Oskarshamn.', ''];
 
-    GREETINGS = ['hi', 'hello', 'hey', 'hej', 'hallå', 'tja', 'tjena'];
+    App.prototype.GREETINGS = ['hi', 'hello', 'hey', 'hej', 'hallå', 'tja', 'tjena'];
 
     App.prototype.start = function() {
       $('input').keypress(function(e) {
@@ -43,7 +41,7 @@
     App.prototype.checkIfValid = function(command) {
       var text;
       text = '';
-      if (indexOf.call(VALID_COMMANDS, command) >= 0) {
+      if (indexOf.call(this.VALID_COMMANDS, command) >= 0) {
         text = this.getResultOf(command);
       } else {
         text = this.getErrorFor(command);
@@ -56,19 +54,19 @@
       text = '';
       switch (command) {
         case 'help':
-          text = HELP_TEXT.join('\n');
+          text = this.HELP_TEXT.join('\n');
           break;
         case 'clear':
           $(output).val('');
           break;
         case 'about':
-          text = ABOUT_TEXT.join('\n');
+          text = this.ABOUT_TEXT.join('\n');
           break;
         case 'contact':
-          text = CONTACT_TEXT.join('\n');
+          text = this.CONTACT_TEXT.join('\n');
           break;
         case 'cv':
-          text = CV_TEXT.join('\n');
+          text = this.CV_TEXT.join('\n');
           break;
         default:
           text = command;
@@ -79,7 +77,7 @@
     App.prototype.getErrorFor = function(command) {
       var text;
       text = "Command not found. Type 'help' to list valid commands.";
-      if (GREETINGS.some(function(greeting) {
+      if (this.GREETINGS.some(function(greeting) {
         return command.indexOf(greeting) >= 0;
       })) {
         text = 'Hi there.';
